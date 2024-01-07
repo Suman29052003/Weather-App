@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Made By Syam</title>
+    <link rel="icon" href="images/mainIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container ">
+        <div class="searchbox ">
+            <input id="searchinput" type="text" placeholder="enter city name">
+            <button id="searchbtn"><i class='bx bx-search'></i></button>
+        </div>
+        <div id="error">
+            Invalid City Name!
+        </div>
+        <div class="weather" id="weather">
+            <div class="information ">
+                <h1 id="city">London</h1>
+                <img id="weatherImages" src="images/clear.png" alt="">
+            </div>
+            <div class="temperature flex ">
+                <span><i class='bx bx-water white'></i></i>
+                    <p class="fontSize white" id="humidity">30-40%</p>
+                    <p class="white">Humidity</p>
+                </span>
+                <h1 class="white" id="temp">22&deg;C</h1>
+                <span><i class='bx bx-wind white'></i>
+                    <p class="fontSize white" id="wind">50 km/h</p>
+                    <p class="white">Wind Speed</p>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+
+</html>
